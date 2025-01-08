@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <nav>
+            <a href="movies.html">Movie Recommendations</a>
+        </nav>
+    </header>
+    <main>
+        <section id="weather-info">
+            <h2>Weather Info</h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="icon" alt="Weather Icon">
+            <p id="coordinates"></p>
+            <p id="feels-like"></p>
+            <p id="humidity"></p>
+            <p id="pressure"></p>
+            <p id="wind-speed"></p>
+            <p id="country"></p>
+            <p id="rain"></p>
+        </section>
+        <section id="map-section">
+            <h2>Location</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Talgat | Group: 2306</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
